@@ -3,6 +3,8 @@
 #include <winsock2.h>
 #include <ws2tcpip.h>
 
+// make sure to link to ws2_32 in tasks.json
+
 // Link the Winsock library
 #pragma comment(lib, "ws2_32.lib")
 
