@@ -1,7 +1,6 @@
 /*
 ** server.c -- a stream socket server
 */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -9,8 +8,7 @@
 #include <ws2tcpip.h>
 #include <windows.h>
 
-#define PORT "8080"  // the port users will be connecting to
-
+#define PORT "8080"
 #define BACKLOG 10   // how many pending connections queue will hold
 
 // get sockaddr, IPv4 or IPv6:
@@ -55,7 +53,6 @@ int main(void)
     }
 
     memset(&hints, 0, sizeof hints);
-    //hints.ai_family = AF_UNSPEC;
     hints.ai_family = AF_INET;
     hints.ai_socktype = SOCK_STREAM;
     hints.ai_flags = AI_PASSIVE; // use my IP

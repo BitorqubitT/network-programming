@@ -1,7 +1,6 @@
 /*
-** client.c -- a stream socket client demo
+** client.c -- a stream socket client
 */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -9,8 +8,7 @@
 #include <ws2tcpip.h>
 #include <windows.h>
 
-#define PORT "8080" // the port client will be connecting to 
-
+#define PORT "8080"
 #define MAXDATASIZE 100 // max number of bytes we can get at once 
 
 // get sockaddr, IPv4 or IPv6:
